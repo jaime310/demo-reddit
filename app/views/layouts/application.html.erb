@@ -10,14 +10,14 @@
 
 <% if user_signed_in? %>
   <ul>
-    <li><%= link_to 'Subir link', new_link_path %></li>
+    <li><%= link_to 'Subir Link', new_link_path %></li>
     <li><%= link_to 'Cuenta', edit_user_registration_path %></li>
     <li><%= link_to 'Salir', destroy_user_session_path, :method => :delete %></li>
   </ul>
 <% else %>
   <ul>
-    <li><%= link_to 'Crear cuenta', new_user_registration_path %></li>
-    <li><%= link_to 'Iniciar sesion', new_user_session_path %></li>
+    <li><%= link_to 'Crear Cuenta', new_user_registration_path %></li>
+    <li><%= link_to 'Iniciar Sesion', new_user_session_path %></li>
   </ul>
 <% end %>  
   
